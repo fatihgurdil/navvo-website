@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navvo Technology — Kaynak Merkezi</title>
+<meta name="description" content="Navvo Technology kaynak merkezi; kurumsal altyapı, bulut, siber güvenlik, yedekleme ve BT danışmanlığı konu başlıkları — interaktif terminal arayüzünde.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/terminal.css">
+</head>
+<body data-boot="resources">
+
+<div class="crt"></div>
+
+<div class="terminal">
+  <div class="title-bar">
+    <div class="tl-dots">
+      <span></span><span></span><span class="close" title="exit"></span>
+    </div>
+    <div class="tl-title">navvo@technology: ~/resources</div>
+    <div class="tl-badge">LIVE</div>
+  </div>
+
+  <div class="term-body" id="term-body">
+    <div id="term-output"></div>
+    <div class="input-row">
+      <span class="prompt" id="prompt-label">PS C:\Navvo&gt;</span>
+      <input id="term-input" class="term-input" autocomplete="off" spellcheck="false" disabled>
+    </div>
+  </div>
+
+  <div class="quick-cmds">
+    <div class="qc-row">
+      <a href="index.html" class="quick-link">← ana sayfa</a>
+      <span class="qc-label">Site</span>
+      <button data-cmd="help">help</button>
+      <button data-cmd="about">about</button>
+      <button data-cmd="services">services</button>
+      <button data-cmd="process">process</button>
+      <button data-cmd="why">why</button>
+      <button data-cmd="partners">partners</button>
+      <button data-cmd="references">references</button>
+      <button data-cmd="contact">contact</button>
+    </div>
+    <div class="qc-row">
+      <span class="qc-label">Araçlar</span>
+      <button data-cmd="ai" class="ai-btn">🤖 NavvoAI</button>
+      <button data-cmd="myip">myip</button>
+      <button data-cmd="speedtest">speedtest</button>
+      <button data-cmd="dns navvo.co">dns</button>
+      <button data-cmd="fortune" class="fun-btn">✨ fortune</button>
+      <button data-cmd="buyu" class="fun-btn">🎩 sihirbaz</button>
+      <button data-cmd="lang en">EN</button>
+      <button data-cmd="lang tr">TR</button>
+      <span class="hint">↑↓ geçmiş · Tab tamamla</span>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/terminal.js"></script>
+</body>
+</html>
