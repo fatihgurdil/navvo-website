@@ -57,7 +57,8 @@ export async function onRequestPost(context) {
   }
 
   if (!upstream.ok) {
-    return json({ error: "upstream_error" }, 502);
+    const detail = await upstream.text().catch(() => "");
+    return json({ error: "upstream_error", status: upstream.status, detail: detail.slice(0, 500) }, 502);
   }
 
   const data = await upstream.json();
