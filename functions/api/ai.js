@@ -11,7 +11,7 @@
 //   3. Redeploy. Local `npx serve` does NOT run this function — it only works
 //      once deployed to Cloudflare Pages.
 
-const MODEL = "gemini-2.0-flash";
+const MODEL = "gemini-3.6-flash";
 
 const SYSTEM_PROMPT = `Sen NavvoAI'sın, Navvo Technology adlı kurumsal BT şirketinin web sitesinde çalışan bir yapay zeka asistanısın.
 Navvo Technology; sunucu/ağ altyapısı, bulut teknolojileri, siber güvenlik, yedekleme/iş sürekliliği ve stratejik BT danışmanlığı alanlarında hizmet verir.
