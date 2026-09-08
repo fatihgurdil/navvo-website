@@ -21,6 +21,7 @@
       <span></span><span></span><span class="close" title="exit"></span>
     </div>
     <div class="tl-title">navvo@technology: ~/resources</div>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Menü">☰</button>
     <button class="lang-toggle" id="lang-toggle" type="button">EN</button>
     <div class="tl-badge">LIVE</div>
   </div>
@@ -33,32 +34,30 @@
     </div>
   </div>
 
-  <div class="quick-cmds">
-    <button class="qc-toggle" id="qc-toggle" type="button">☰ Komutlar <span class="chev">▾</span></button>
-    <div class="qc-body" id="qc-body">
-      <div class="qc-body-inner">
-        <div class="qc-row">
-          <a href="index.html" class="quick-link">← ana sayfa</a>
-          <span class="qc-label">Site</span>
-          <button data-cmd="help">help</button>
-          <button data-cmd="about">about</button>
-          <button data-cmd="services">services</button>
-          <button data-cmd="process">process</button>
-          <button data-cmd="why">why</button>
-          <button data-cmd="partners">partners</button>
-          <button data-cmd="references">references</button>
-          <button data-cmd="contact">contact</button>
-        </div>
-        <div class="qc-row">
-          <span class="qc-label">Araçlar</span>
-          <button data-cmd="ai" class="ai-btn">🤖 NavvoAI</button>
-          <button data-cmd="myip">myip</button>
-          <button data-cmd="speedtest">speedtest</button>
-          <button data-cmd="dns navvo.co">dns</button>
-          <button data-cmd="fortune" class="fun-btn">✨ fortune</button>
-          <button data-cmd="buyu" class="fun-btn">🎩 sihirbaz</button>
-          <span class="hint">↑↓ geçmiş · Tab tamamla</span>
-        </div>
+  <div class="qc-backdrop" id="qc-backdrop"></div>
+  <div class="quick-cmds" id="quick-cmds">
+    <div class="qc-body-inner">
+      <div class="qc-row">
+        <a href="index.html" class="quick-link">← ana sayfa</a>
+        <span class="qc-label">Site</span>
+        <button data-cmd="help">help</button>
+        <button data-cmd="about">about</button>
+        <button data-cmd="services">services</button>
+        <button data-cmd="process">process</button>
+        <button data-cmd="why">why</button>
+        <button data-cmd="partners">partners</button>
+        <button data-cmd="references">references</button>
+        <button data-cmd="contact">contact</button>
+      </div>
+      <div class="qc-row">
+        <span class="qc-label">Araçlar</span>
+        <button data-cmd="ai" class="ai-btn">🤖 NavvoAI</button>
+        <button data-cmd="myip">myip</button>
+        <button data-cmd="speedtest">speedtest</button>
+        <button data-cmd="dns navvo.co">dns</button>
+        <button data-cmd="fortune" class="fun-btn">✨ fortune</button>
+        <button data-cmd="buyu" class="fun-btn">🎩 sihirbaz</button>
+        <span class="hint">↑↓ geçmiş · Tab tamamla</span>
       </div>
     </div>
   </div>

@@ -952,26 +952,44 @@
       focusInputIfNotTouch();
     });
 
-    const qcToggle = document.getElementById("qc-toggle");
-    const qcBody = document.getElementById("qc-body");
-    if (qcToggle && qcBody) {
-      qcToggle.addEventListener("click", () => {
-        qcToggle.classList.toggle("open");
-        qcBody.classList.toggle("open");
-      });
+    const menuToggle = document.getElementById("menu-toggle");
+    const quickCmds = document.getElementById("quick-cmds");
+    const qcBackdrop = document.getElementById("qc-backdrop");
+
+    function openMenu() {
+      if (!menuToggle || !quickCmds) return;
+      menuToggle.classList.add("open");
+      menuToggle.textContent = "✕";
+      quickCmds.classList.add("open");
+      if (qcBackdrop) qcBackdrop.classList.add("open");
+    }
+    function closeMenu() {
+      if (!menuToggle || !quickCmds) return;
+      menuToggle.classList.remove("open");
+      menuToggle.textContent = "☰";
+      quickCmds.classList.remove("open");
+      if (qcBackdrop) qcBackdrop.classList.remove("open");
     }
 
-    document.querySelectorAll(".quick-cmds button:not(.qc-toggle)").forEach((btn) => {
+    if (menuToggle && quickCmds) {
+      menuToggle.addEventListener("click", () => {
+        if (quickCmds.classList.contains("open")) closeMenu();
+        else openMenu();
+      });
+    }
+    if (qcBackdrop) qcBackdrop.addEventListener("click", closeMenu);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMenu();
+    });
+
+    document.querySelectorAll(".quick-cmds button").forEach((btn) => {
       btn.addEventListener("click", () => {
         magicState = null;
         aiState = null;
         cmdClear();
         handleCommand(btn.dataset.cmd);
         focusInputIfNotTouch();
-        if (qcToggle && qcBody) {
-          qcToggle.classList.remove("open");
-          qcBody.classList.remove("open");
-        }
+        closeMenu();
       });
     });
 
