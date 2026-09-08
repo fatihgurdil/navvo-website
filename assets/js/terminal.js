@@ -952,15 +952,38 @@
       focusInputIfNotTouch();
     });
 
-    document.querySelectorAll(".quick-cmds button").forEach((btn) => {
+    const qcToggle = document.getElementById("qc-toggle");
+    const qcBody = document.getElementById("qc-body");
+    if (qcToggle && qcBody) {
+      qcToggle.addEventListener("click", () => {
+        qcToggle.classList.toggle("open");
+        qcBody.classList.toggle("open");
+      });
+    }
+
+    document.querySelectorAll(".quick-cmds button:not(.qc-toggle)").forEach((btn) => {
       btn.addEventListener("click", () => {
         magicState = null;
         aiState = null;
         cmdClear();
         handleCommand(btn.dataset.cmd);
         focusInputIfNotTouch();
+        if (qcToggle && qcBody) {
+          qcToggle.classList.remove("open");
+          qcBody.classList.remove("open");
+        }
       });
     });
+
+    const langToggle = document.getElementById("lang-toggle");
+    if (langToggle) {
+      langToggle.textContent = lang === "tr" ? "EN" : "TR";
+      langToggle.addEventListener("click", () => {
+        const target = lang === "tr" ? "en" : "tr";
+        handleCommand("lang " + target);
+        langToggle.textContent = lang === "tr" ? "EN" : "TR";
+      });
+    }
 
     document.querySelector(".tl-dots .close").addEventListener("click", () => {
       handleCommand("exit");

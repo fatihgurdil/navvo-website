@@ -49,8 +49,14 @@ button{ font-family:inherit; cursor:pointer; }
 .tl-dots span.close{ background:var(--accent); cursor:pointer; }
 .tl-dots span.close:hover{ filter:brightness(1.3); }
 .tl-title{ font-size:.78rem; color:var(--text-dim); letter-spacing:.02em; }
+.lang-toggle{
+  margin-left:auto; font-size:.68rem; color:var(--text-dim); border:1px solid var(--border-strong);
+  background:var(--panel); padding:3px 10px; border-radius:999px; letter-spacing:.05em;
+  text-transform:uppercase; transition:all .2s;
+}
+.lang-toggle:hover{ color:var(--accent); border-color:var(--accent); background:var(--accent-dim); }
 .tl-badge{
-  margin-left:auto; font-size:.68rem; color:var(--accent); border:1px solid var(--accent-dim);
+  font-size:.68rem; color:var(--accent); border:1px solid var(--accent-dim);
   background:var(--accent-dim); padding:3px 9px; border-radius:999px; letter-spacing:.05em; text-transform:uppercase;
   animation: live-pulse 2.4s ease-in-out infinite;
 }
@@ -127,9 +133,17 @@ button{ font-family:inherit; cursor:pointer; }
 .term-input::selection{ background:var(--accent-dim); }
 
 .quick-cmds{
-  flex:none; display:flex; flex-direction:column; gap:9px;
+  flex:none;
   padding:12px 26px 16px; border-top:1px solid var(--border); background:var(--panel);
 }
+.qc-toggle{
+  display:none; width:100%; align-items:center; justify-content:space-between;
+  background:var(--panel-2); border:1px solid var(--border-strong); color:var(--text-dim);
+  padding:10px 14px; border-radius:6px; font-size:.8rem;
+}
+.qc-toggle .chev{ transition:transform .25s ease; }
+.qc-toggle.open .chev{ transform:rotate(180deg); }
+.qc-body{ display:flex; flex-direction:column; gap:9px; }
 .qc-row{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
 .qc-row + .qc-row{ padding-top:9px; border-top:1px solid var(--border); }
 .qc-label{
@@ -165,4 +179,11 @@ button{ font-family:inherit; cursor:pointer; }
   .term-body{ padding:16px 16px 8px; }
   .quick-cmds{ padding:10px 16px 14px; }
   .title-bar{ padding:10px 14px; }
+
+  .qc-toggle{ display:flex; }
+  .qc-body{
+    display:grid; grid-template-rows:0fr; transition:grid-template-rows .3s ease;
+  }
+  .qc-body.open{ grid-template-rows:1fr; margin-top:10px; }
+  .qc-body-inner{ overflow:hidden; display:flex; flex-direction:column; gap:9px; }
 }
