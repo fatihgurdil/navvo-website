@@ -893,10 +893,18 @@
     revealInput();
   }
 
+  function isTouchDevice() {
+    return window.matchMedia("(pointer: coarse)").matches;
+  }
+
+  function focusInputIfNotTouch() {
+    if (!isTouchDevice()) inputEl.focus();
+  }
+
   function revealInput() {
     document.querySelector(".input-row").style.visibility = "visible";
     inputEl.disabled = false;
-    inputEl.focus();
+    focusInputIfNotTouch();
   }
 
   /* ---------- Wiring ---------- */
@@ -941,7 +949,7 @@
         aiState = null;
         handleCommand(trigger.dataset.cmd);
       }
-      inputEl.focus();
+      focusInputIfNotTouch();
     });
 
     document.querySelectorAll(".quick-cmds button").forEach((btn) => {
@@ -950,7 +958,7 @@
         aiState = null;
         cmdClear();
         handleCommand(btn.dataset.cmd);
-        inputEl.focus();
+        focusInputIfNotTouch();
       });
     });
 
