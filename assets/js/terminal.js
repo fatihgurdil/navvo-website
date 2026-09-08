@@ -885,12 +885,16 @@
     await bootLine(t.bootHelp, "dim", 160);
     spacer();
 
-    const BOOT_DISPATCH = { help: cmdHelp, resources: cmdResources, tree: cmdTree, about: cmdAbout, services: () => cmdServices([]) };
-    const bootCmd = document.body.dataset.boot || "help";
-    (BOOT_DISPATCH[bootCmd] || cmdHelp)();
+    runBootView();
 
     scrollBottom();
     revealInput();
+  }
+
+  function runBootView() {
+    const BOOT_DISPATCH = { help: cmdHelp, resources: cmdResources, tree: cmdTree, about: cmdAbout, services: () => cmdServices([]) };
+    const bootCmd = document.body.dataset.boot || "help";
+    (BOOT_DISPATCH[bootCmd] || cmdHelp)();
   }
 
   function isTouchDevice() {
@@ -998,8 +1002,11 @@
       langToggle.textContent = lang === "tr" ? "EN" : "TR";
       langToggle.addEventListener("click", () => {
         const target = lang === "tr" ? "en" : "tr";
+        cmdClear();
         handleCommand("lang " + target);
+        runBootView();
         langToggle.textContent = lang === "tr" ? "EN" : "TR";
+        scrollBottom();
       });
     }
 
