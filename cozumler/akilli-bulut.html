@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akıllı Bulut Teknolojileri — Navvo Technology</title>
+<meta name="description" content="Esnek bulut altyapı hizmetleri (IaaS), modern platform çözümleri (PaaS), hibrit bulut mimarileri ve KVKK uyumlu kurumsal bulut güvenliği hakkında güncel içerikler ve kılavuzlar.">
+<meta name="theme-color" content="#1a0b04">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css?v=11">
+</head>
+<body data-page="solution" data-slug="akilli-bulut">
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <a href="tel:+905324895462" class="topbar-alert"><svg viewBox="0 0 24 24" class="ico"><path d="M12 3 2 20h20Z"/><path d="M12 10v4M12 17h.01"/></svg><span data-i18n="top.alert">Siber saldırı mı yaşıyorsunuz? Hemen yardım alın</span></a>
+    <div class="topbar-links">
+      <a href="https://customer.navvo.co" class="topbar-link"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span data-i18n="top.login">Müşteri Girişi</span></a>
+      <button class="topbar-link lang-btn" id="lang-toggle" type="button" aria-label="Dil / Language"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span id="lang-label">EN</span></button>
+    </div>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="brand" aria-label="Navvo Technology">
+      <img src="/assets/img/logo-white.png" alt="Navvo" class="brand-logo logo-on-dark" width="507" height="96">
+      <img src="/assets/img/logo.png" alt="" class="brand-logo logo-on-light" width="507" height="96">
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <div class="nav-drop mega">
+        <a href="/#services" class="nav-drop-btn"><span data-i18n="nav.solutions">Çözümlerimiz</span><svg viewBox="0 0 24 24" class="ico chev"><path d="m6 9 6 6 6-6"/></svg></a>
+        <div class="mega-menu" id="mega-menu"></div>
+      </div>
+    </nav>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-outline btn-sm nav-cta" data-i18n="nav.contact">İletişim</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Menü"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero sol-hero">
+    <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-grain" aria-hidden="true"></div>
+    <div class="container sol-hero-grid">
+      <div class="sol-hero-copy">
+        <a href="/#services" class="eyebrow eyebrow-glow reveal" data-i18n="nav.solutions">Çözümlerimiz</a>
+        <h1 class="reveal" style="--d:1" id="sol-name">Akıllı Bulut Teknolojileri</h1>
+        <p class="sol-tag reveal" style="--d:2" id="sol-tag">Esnek, güvenli ve KVKK uyumlu bulut altyapıları</p>
+        <p class="sol-desc reveal" style="--d:2" id="sol-desc">Esnek bulut altyapı hizmetleri (IaaS), modern platform çözümleri (PaaS), hibrit bulut mimarileri ve KVKK uyumlu kurumsal bulut güvenliği hakkında güncel içerikler ve kılavuzlar.</p>
+        <div class="hero-actions reveal" style="--d:3">
+          <a href="#contact" class="btn btn-outline-light" data-i18n="sol.cta">Uzmanla Görüşün</a>
+          <a href="#kapsam" class="link-arrow light"><span data-i18n="sol.scopeLink">Hizmet kapsamını inceleyin</span> <svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="sol-visual reveal" style="--d:2" id="sol-visual" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="sol-stats">
+    <div class="container sol-stats-grid">
+      <div class="sol-stat reveal"><b><span data-count="17">17</span>+</b><span data-i18n="stats.years">Yıllık Tecrübe</span></div>
+      <div class="sol-stat reveal" style="--d:1"><b><span data-count="150">150</span>+</b><span data-i18n="stats.projects">Tamamlanan Proje</span></div>
+      <div class="sol-stat reveal" style="--d:2"><b>%<span data-count="99.9" data-dec="1">99.9</span></b><span data-i18n="stats.uptime">Ortalama Çalışma Süresi</span></div>
+      <div class="sol-stat reveal" style="--d:3"><b>7/24</b><span data-i18n="stats.support">Kesintisiz İzleme</span></div>
+    </div>
+  </section>
+
+  <nav class="subnav" id="subnav">
+    <div class="container subnav-inner">
+      <b id="subnav-name">Akıllı Bulut Teknolojileri</b>
+      <div class="subnav-links">
+        <a href="#zorluklar" data-i18n="sol.nav.challenges">Zorluklar</a>
+        <a href="#genel-bakis" data-i18n="sol.nav.overview">Genel Bakış</a>
+        <a href="#kapsam" data-i18n="sol.nav.scope">Hizmet Kapsamı</a>
+        <a href="#surec" data-i18n="sol.nav.process">Süreç</a>
+        <a href="#teknolojiler" data-i18n="sol.nav.tech">Teknolojiler</a>
+        <a href="#contact" class="btn btn-primary btn-sm" data-i18n="sol.cta">Uzmanla Görüşün</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section sol-challenge" id="zorluklar">
+    <div class="container sol-challenge-grid" id="sol-challenge"></div>
+  </section>
+
+  <section class="section sol-overview" id="genel-bakis">
+    <div class="container" id="sol-overview"></div>
+  </section>
+
+  <section class="section sol-scope" id="kapsam">
+    <div class="container" id="sol-scope"></div>
+  </section>
+
+  <section class="section process" id="surec">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow" data-i18n="process.eyebrow">İşleyiş Modelimiz</div>
+        <h2 data-i18n="process.title">Projelerinizi Geleceğe Taşıyan 4 Aşamalı Sürecimiz</h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <section class="section sol-tech" id="teknolojiler">
+    <div class="container" id="sol-tech"></div>
+  </section>
+
+  <section class="section sol-others">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow" data-i18n="nav.solutions">Çözümlerimiz</div>
+        <h2 data-i18n="sol.othersTitle">Diğer çözümlerimiz</h2>
+      </div>
+      <div class="others-grid" id="sol-others"></div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <canvas class="cta-canvas" id="cta-canvas" aria-hidden="true"></canvas>
+    <div class="container cta-inner reveal">
+      <h2 data-i18n="cta.title">Teknoloji Altyapınızı Bir Üst Seviyeye Taşıyalım</h2>
+      <p data-i18n="cta.subtitle">Uzman ekibimiz, ihtiyaçlarınıza özel bir yol haritası çıkarmak için hazır.</p>
+      <a href="#contact" class="btn btn-outline-light" data-i18n="cta.button">Hemen İletişime Geçin</a>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <div class="eyebrow" data-i18n="contact.eyebrow">İletişim</div>
+        <h2 data-i18n="contact.title">Bir Proje mi Konuşalım?</h2>
+        <p class="muted" data-i18n="contact.subtitle">Formu doldurun, ekibimiz en kısa sürede size dönüş yapsın.</p>
+        <ul class="contact-list">
+          <li><span class="ci"><svg viewBox="0 0 24 24" class="ico"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><small data-i18n="contact.phone">Mobil</small><a href="tel:+905324895462">+90 532 489 54 62</a></div></li>
+          <li><span class="ci"><svg viewBox="0 0 24 24" class="ico"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><small data-i18n="contact.info.email">E-posta</small><a href="mailto:info@navvo.co">info@navvo.co</a></div></li>
+          <li><span class="ci"><svg viewBox="0 0 24 24" class="ico"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></span><div><small data-i18n="contact.info.location">Konum</small><span data-i18n="contact.info.locationValue">İstanbul, Türkiye</span></div></li>
+          <li><span class="ci"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><small data-i18n="contact.monitor">İzleme</small><span>7/24</span></div></li>
+        </ul>
+      </div>
+      <form class="contact-form reveal" style="--d:1" id="contact-form">
+        <div class="row2">
+          <label><span data-i18n="contact.name">Ad Soyad</span><input name="name" required></label>
+          <label><span data-i18n="contact.email">E-posta</span><input name="email" type="email" required></label>
+        </div>
+        <label><span data-i18n="contact.company">Şirket</span><input name="company"></label>
+        <label><span data-i18n="contact.message">Mesajınız</span><textarea name="message" rows="5" required></textarea></label>
+        <button class="btn btn-primary" type="submit"><span data-i18n="contact.send">Mesajı Gönder</span> <svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="/" class="brand brand-foot"><img src="/assets/img/logo-white.png" alt="Navvo" class="brand-logo" width="507" height="96"><span class="brand-tag">System &amp; Cloud Solutions</span></a>
+      <p class="muted" data-i18n="footer.tagline">Kurumsal altyapı, bulut, siber güvenlik ve BT danışmanlığında güvenilir teknoloji ortağınız.</p>
+    </div>
+    <div>
+      <h4 data-i18n="footer.categoriesTitle">Çözüm Alanları</h4>
+      <ul class="footer-links" id="footer-cats"></ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.productTitle">Yazılımlar</h4>
+      <ul class="footer-links">
+        <li><a href="/#portal" data-i18n="nav.product">Müşteri Paneli</a></li>
+        <li><a href="https://customer.navvo.co" data-i18n="top.login">Müşteri Girişi</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.contactTitle">İletişim</h4>
+      <ul class="footer-links">
+        <li><a href="tel:+905324895462">+90 532 489 54 62</a></li>
+        <li><a href="mailto:info@navvo.co">info@navvo.co</a></li>
+        <li><span data-i18n="contact.info.locationValue">İstanbul, Türkiye</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year">2026</span> Navvo Technology. <span data-i18n="footer.rights">Tüm hakları saklıdır.</span></span>
+  </div>
+</footer>
+
+<button class="ai-fab" id="ai-fab" type="button" aria-label="NavvoAI">
+  <svg viewBox="0 0 24 24" class="ico"><path d="M4 5h16v11H8l-4 4Z"/><path d="M9 10h.01M12 10h.01M15 10h.01"/></svg>
+  <span>NavvoAI</span>
+</button>
+<div class="ai-panel" id="ai-panel" role="dialog" aria-label="NavvoAI">
+  <div class="ai-head"><div><b>NavvoAI</b><small data-i18n="ai.sub">Genel teknik sorularınız için</small></div><button type="button" id="ai-close" aria-label="Kapat">×</button></div>
+  <div class="ai-body" id="ai-body"></div>
+  <form class="ai-form" id="ai-form"><input id="ai-input" autocomplete="off" data-i18n-ph="ai.ph" placeholder="Sorunuzu yazın..."><button type="submit" aria-label="Gönder"><svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="/assets/js/data.js?v=11"></script>
+<script src="/assets/js/site.js?v=11"></script>
+</body>
+</html>

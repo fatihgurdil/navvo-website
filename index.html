@@ -3,67 +3,268 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Navvo Technology — Terminal</title>
-<meta name="description" content="Navvo Technology; kurumsal altyapı, bulut, siber güvenlik, yedekleme ve BT danışmanlığı hizmetlerini interaktif bir komut satırı arayüzünde sunar.">
-<link rel="icon" href="data:,">
+<title>Navvo Technology — Kurumsal Altyapı, Bulut ve Siber Güvenlik</title>
+<meta name="description" content="Navvo Technology; kurumsal sunucu ve ağ altyapısı, bulut teknolojileri, siber güvenlik, yedekleme ve iş sürekliliği ile stratejik BT danışmanlığı alanlarında uçtan uca çözümler sunar.">
+<meta name="theme-color" content="#1a0b04">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/terminal.css?v=4">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=11">
 </head>
-<body>
+<body data-page="home">
 
-<div class="crt"></div>
-
-<div class="terminal">
-  <div class="title-bar">
-    <div class="tl-dots">
-      <span></span><span></span><span class="close" title="exit"></span>
-    </div>
-    <div class="tl-title">navvo@technology: ~</div>
-    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Menü">☰</button>
-    <button class="lang-toggle" id="lang-toggle" type="button">EN</button>
-    <div class="tl-badge">LIVE</div>
-  </div>
-
-  <div class="term-body" id="term-body">
-    <div id="term-output"></div>
-    <div class="input-row">
-      <span class="prompt" id="prompt-label">PS C:\Navvo&gt;</span>
-      <input id="term-input" class="term-input" autocomplete="off" spellcheck="false" disabled>
-    </div>
-  </div>
-
-  <div class="qc-backdrop" id="qc-backdrop"></div>
-  <div class="quick-cmds" id="quick-cmds">
-    <div class="qc-body-inner">
-      <div class="qc-row">
-        <span class="qc-label">Site</span>
-        <button data-cmd="help">help</button>
-        <button data-cmd="about">about</button>
-        <button data-cmd="services">services</button>
-        <button data-cmd="process">process</button>
-        <button data-cmd="why">why</button>
-        <button data-cmd="partners">partners</button>
-        <button data-cmd="references">references</button>
-        <button data-cmd="resources">resources</button>
-        <button data-cmd="contact">contact</button>
-      </div>
-      <div class="qc-row">
-        <span class="qc-label">Araçlar</span>
-        <button data-cmd="ai" class="ai-btn">🤖 NavvoAI</button>
-        <button data-cmd="myip">myip</button>
-        <button data-cmd="speedtest">speedtest</button>
-        <button data-cmd="dns navvo.co">dns</button>
-        <button data-cmd="fortune" class="fun-btn">✨ fortune</button>
-        <button data-cmd="buyu" class="fun-btn">🎩 sihirbaz</button>
-        <span class="hint">↑↓ geçmiş · Tab tamamla</span>
-      </div>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <a href="tel:+905324895462" class="topbar-alert"><svg viewBox="0 0 24 24" class="ico"><path d="M12 3 2 20h20Z"/><path d="M12 10v4M12 17h.01"/></svg><span data-i18n="top.alert">Siber saldırı mı yaşıyorsunuz? Hemen yardım alın</span></a>
+    <div class="topbar-links">
+      <a href="https://customer.navvo.co" class="topbar-link"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span data-i18n="top.login">Müşteri Girişi</span></a>
+      <button class="topbar-link lang-btn" id="lang-toggle" type="button" aria-label="Dil / Language"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span id="lang-label">EN</span></button>
     </div>
   </div>
 </div>
 
-<script src="assets/js/data.js?v=4"></script>
-<script src="assets/js/terminal.js?v=4"></script>
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand" aria-label="Navvo Technology">
+      <img src="assets/img/logo-white.png" alt="Navvo" class="brand-logo logo-on-dark" width="507" height="96">
+      <img src="assets/img/logo.png" alt="" class="brand-logo logo-on-light" width="507" height="96">
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <div class="nav-drop mega">
+        <a href="#services" class="nav-drop-btn"><span data-i18n="nav.solutions">Çözümlerimiz</span><svg viewBox="0 0 24 24" class="ico chev"><path d="m6 9 6 6 6-6"/></svg></a>
+        <div class="mega-menu" id="mega-menu"></div>
+      </div>
+    </nav>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-outline btn-sm nav-cta" data-i18n="nav.contact">İletişim</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Menü"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-grain" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="eyebrow eyebrow-glow reveal" data-i18n="hero.eyebrow">Kurumsal Teknoloji Ortağınız</div>
+      <h1 class="reveal" style="--d:1"><span data-i18n="hero.title1">Uptime %99.9.</span> <span data-i18n="hero.title2">Kalan %0.1'de de buradayız.</span></h1>
+      <p class="hero-sub reveal" style="--d:2" data-i18n="hero.subtitle">Altyapıdan buluta, siber güvenlikten iş sürekliliğine — işletmenizin dijital omurgasını uçtan uca tasarlıyor, koruyor ve yönetiyoruz.</p>
+      <div class="hero-actions reveal" style="--d:3">
+        <a href="#services" class="btn btn-outline-light" data-i18n="hero.cta1">Hizmetlerimizi Keşfedin</a>
+        <a href="#contact" class="link-arrow light"><span data-i18n="hero.cta2">Ücretsiz Danışmanlık Alın</span> <svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="spotlight">
+    <div class="container spot-grid">
+      <a href="#portal" class="spot reveal">
+        <span class="spot-tag" data-i18n="spot.1.tag">Yeni · Navvo Müşteri Paneli</span>
+        <h3 data-i18n="spot.1.title">Tüm BT varlıklarınız tek ekranda</h3>
+        <p data-i18n="spot.1.desc">Cihazlar, lisanslar, hizmetler ve destek talepleri; güvenli, 2FA korumalı tek bir panelde.</p>
+        <span class="spot-go"><svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="#services" class="spot reveal" style="--d:1">
+        <span class="spot-tag" data-i18n="spot.2.tag">Siber Güvenlik</span>
+        <h3 data-i18n="spot.2.title">Tehditleri işinizi etkilemeden durdurun</h3>
+        <p data-i18n="spot.2.desc">Tehdit tespiti, sızma testleri, veri ve e-posta güvenliği ile uçtan uca koruma.</p>
+        <span class="spot-go"><svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="#process" class="spot reveal" style="--d:2">
+        <span class="spot-tag" data-i18n="spot.3.tag">Yönetilen Hizmetler</span>
+        <h3 data-i18n="spot.3.title">7/24 proaktif izleme ve destek</h3>
+        <p data-i18n="spot.3.desc">Olası arızaları henüz işinizi etkilemeden tespit edip çözüyoruz.</p>
+        <span class="spot-go"><svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="dark-band about" id="about">
+    <div class="streak" aria-hidden="true"></div>
+    <div class="container narrow center">
+      <div class="eyebrow eyebrow-glow reveal" data-i18n="about.eyebrow">Navvo Technology</div>
+      <h2 class="reveal" data-i18n="about.title">Uçtan uca teknoloji ortağınız</h2>
+      <p class="lead reveal" style="--d:1" data-i18n="about.body">Navvo Technology; kurumsal sunucu ve ağ altyapısından buluta, siber güvenlikten yedekleme ve iş sürekliliğine kadar uçtan uca teknoloji çözümleri sunan bir kurumsal teknoloji ortağıdır.</p>
+    </div>
+    <div class="container stats-grid">
+      <div class="stat reveal"><div class="stat-num"><span data-count="17">17</span>+</div><div class="stat-label" data-i18n="stats.years">Yıllık Tecrübe</div></div>
+      <div class="stat reveal" style="--d:1"><div class="stat-num"><span data-count="150">150</span>+</div><div class="stat-label" data-i18n="stats.projects">Tamamlanan Proje</div></div>
+      <div class="stat reveal" style="--d:2"><div class="stat-num">%<span data-count="99.9" data-dec="1">99.9</span></div><div class="stat-label" data-i18n="stats.uptime">Ortalama Çalışma Süresi</div></div>
+      <div class="stat reveal" style="--d:3"><div class="stat-num">7/24</div><div class="stat-label" data-i18n="stats.support">Kesintisiz İzleme</div></div>
+    </div>
+  </section>
+
+  <section class="dark-band portal" id="portal">
+    <div class="container portal-grid">
+      <div class="laptop reveal" aria-label="Navvo Müşteri Paneli demo">
+        <div class="laptop-screen"><div class="demo-fit" id="demo-fit"><div class="demo" id="demo"></div></div></div>
+        <div class="laptop-base"></div>
+      </div>
+      <div class="portal-copy">
+        <div class="eyebrow eyebrow-glow reveal" data-i18n="portal.eyebrow">Yazılımlarımız · Navvo Müşteri Paneli</div>
+        <h2 class="reveal" data-i18n="portal.title">BT altyapınızın kontrolü artık sizde</h2>
+        <p class="lead-sm reveal" style="--d:1" data-i18n="portal.desc">Cihazlarınızı, lisanslarınızı, hizmetlerinizi ve destek taleplerinizi tek bir güvenli panelden takip edin. Lisans bitişlerini kaçırmayın, çalışanlarınız şifresiz talep açsın, raporlarınız her ay hazır olsun.</p>
+        <ul class="feat-list reveal" style="--d:2" id="feat-list"></ul>
+        <div class="portal-actions reveal" style="--d:3">
+          <a href="#contact" class="btn btn-primary" data-i18n="portal.buy">Teklif Alın</a>
+          <a href="https://customer.navvo.co" class="link-arrow light"><span data-i18n="top.login">Müşteri Girişi</span> <svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow" data-i18n="services.eyebrow">Neler Yapıyoruz</div>
+        <h2 data-i18n="services.title">Uçtan Uca Teknoloji Çözümleri</h2>
+        <p data-i18n="services.subtitle">Beş ana çözüm alanında, işletmenizin ihtiyacına özel tasarlanmış hizmet grupları.</p>
+      </div>
+      <div class="svc-grid" id="svc-grid"></div>
+    </div>
+  </section>
+
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow" data-i18n="process.eyebrow">İşleyiş Modelimiz</div>
+        <h2 data-i18n="process.title">Projelerinizi Geleceğe Taşıyan 4 Aşamalı Sürecimiz</h2>
+        <p data-i18n="process.subtitle">İşletmenizin hedeflerini, verimliliği ve uzun vadeli büyümeyi destekleyen; güvenli, ölçeklenebilir ve sürdürülebilir bir teknoloji stratejisine dönüştüren adım adım işleyiş sürecimiz.</p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <section class="dark-band why" id="why">
+    <div class="streak streak-2" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-head center reveal">
+        <div class="eyebrow eyebrow-glow" data-i18n="why.eyebrow">Farklılıklarımız</div>
+        <h2 data-i18n="why.title">İşletmeniz İçin Neden Navvo Teknoloji?</h2>
+        <p data-i18n="why.subtitle">Sadece bir BT tedarikçisi değil, iş süreçlerinizin kesintisiz ilerlemesini sağlayan proaktif ve stratejik teknoloji ortağınızız.</p>
+      </div>
+      <div class="why-grid" id="why-grid"></div>
+    </div>
+  </section>
+
+  <section class="section logos" id="partners">
+    <div class="container">
+      <div class="section-head center reveal">
+        <div class="eyebrow" data-i18n="partners.eyebrow">İş Ortaklarımız</div>
+        <h2 data-i18n="partners.title">Teknoloji Çözüm Ortaklarımız</h2>
+        <p data-i18n="partners.subtitle">Sektörün lider teknoloji üreticileriyle sertifikalı iş ortaklığımız bulunuyor.</p>
+      </div>
+    </div>
+    <div class="marquee reveal" id="partners-marquee"></div>
+  </section>
+
+  <section class="section tools" id="tools">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow" data-i18n="tools.eyebrow">Ücretsiz Araçlar</div>
+        <h2 data-i18n="tools.title">Bağlantınızı Hızlıca Kontrol Edin</h2>
+      </div>
+      <div class="tool-grid">
+        <div class="tool reveal">
+          <div class="tool-head"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><h3 data-i18n="tools.ip">IP Adresim</h3></div>
+          <div class="tool-out" id="out-ip">—</div>
+          <button class="btn btn-soft btn-sm" data-tool="ip" data-i18n="tools.run">Çalıştır</button>
+        </div>
+        <div class="tool reveal" style="--d:1">
+          <div class="tool-head"><svg viewBox="0 0 24 24" class="ico"><path d="M4 16a8 8 0 1 1 16 0"/><path d="M12 16l4-5"/></svg><h3 data-i18n="tools.speed">Hız Testi</h3></div>
+          <div class="tool-out" id="out-speed">—</div>
+          <button class="btn btn-soft btn-sm" data-tool="speed" data-i18n="tools.run">Çalıştır</button>
+        </div>
+        <div class="tool reveal" style="--d:2">
+          <div class="tool-head"><svg viewBox="0 0 24 24" class="ico"><rect x="3" y="4" width="18" height="6" rx="1.4"/><rect x="3" y="14" width="18" height="6" rx="1.4"/><path d="M7 7h.01M7 17h.01"/></svg><h3 data-i18n="tools.dns">DNS Sorgu</h3></div>
+          <form class="tool-form" id="dns-form"><input id="dns-input" value="navvo.co" aria-label="Domain" autocomplete="off" spellcheck="false"><button class="btn btn-soft btn-sm" type="submit" data-i18n="tools.query">Sorgula</button></form>
+          <div class="tool-out" id="out-dns">—</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <canvas class="cta-canvas" id="cta-canvas" aria-hidden="true"></canvas>
+    <div class="container cta-inner reveal">
+      <h2 data-i18n="cta.title">Teknoloji Altyapınızı Bir Üst Seviyeye Taşıyalım</h2>
+      <p data-i18n="cta.subtitle">Uzman ekibimiz, ihtiyaçlarınıza özel bir yol haritası çıkarmak için hazır.</p>
+      <a href="#contact" class="btn btn-outline-light" data-i18n="cta.button">Hemen İletişime Geçin</a>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <div class="eyebrow" data-i18n="contact.eyebrow">İletişim</div>
+        <h2 data-i18n="contact.title">Bir Proje mi Konuşalım?</h2>
+        <p class="muted" data-i18n="contact.subtitle">Formu doldurun, ekibimiz en kısa sürede size dönüş yapsın.</p>
+        <ul class="contact-list">
+          <li><span class="ci"><svg viewBox="0 0 24 24" class="ico"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><small data-i18n="contact.phone">Mobil</small><a href="tel:+905324895462">+90 532 489 54 62</a></div></li>
+          <li><span class="ci"><svg viewBox="0 0 24 24" class="ico"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><small data-i18n="contact.info.email">E-posta</small><a href="mailto:info@navvo.co">info@navvo.co</a></div></li>
+          <li><span class="ci"><svg viewBox="0 0 24 24" class="ico"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></span><div><small data-i18n="contact.info.location">Konum</small><span data-i18n="contact.info.locationValue">İstanbul, Türkiye</span></div></li>
+          <li><span class="ci"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><small data-i18n="contact.monitor">İzleme</small><span>7/24</span></div></li>
+        </ul>
+      </div>
+      <form class="contact-form reveal" style="--d:1" id="contact-form">
+        <div class="row2">
+          <label><span data-i18n="contact.name">Ad Soyad</span><input name="name" required></label>
+          <label><span data-i18n="contact.email">E-posta</span><input name="email" type="email" required></label>
+        </div>
+        <label><span data-i18n="contact.company">Şirket</span><input name="company"></label>
+        <label><span data-i18n="contact.message">Mesajınız</span><textarea name="message" rows="5" required></textarea></label>
+        <button class="btn btn-primary" type="submit"><span data-i18n="contact.send">Mesajı Gönder</span> <svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="brand brand-foot"><img src="assets/img/logo-white.png" alt="Navvo" class="brand-logo" width="507" height="96"><span class="brand-tag">System &amp; Cloud Solutions</span></a>
+      <p class="muted" data-i18n="footer.tagline">Kurumsal altyapı, bulut, siber güvenlik ve BT danışmanlığında güvenilir teknoloji ortağınız.</p>
+    </div>
+    <div>
+      <h4 data-i18n="footer.categoriesTitle">Çözüm Alanları</h4>
+      <ul class="footer-links" id="footer-cats"></ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.productTitle">Yazılımlar</h4>
+      <ul class="footer-links">
+        <li><a href="index.html#portal" data-i18n="nav.product">Müşteri Paneli</a></li>
+        <li><a href="https://customer.navvo.co" data-i18n="top.login">Müşteri Girişi</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.contactTitle">İletişim</h4>
+      <ul class="footer-links">
+        <li><a href="tel:+905324895462">+90 532 489 54 62</a></li>
+        <li><a href="mailto:info@navvo.co">info@navvo.co</a></li>
+        <li><span data-i18n="contact.info.locationValue">İstanbul, Türkiye</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year">2026</span> Navvo Technology. <span data-i18n="footer.rights">Tüm hakları saklıdır.</span></span>
+  </div>
+</footer>
+
+<button class="ai-fab" id="ai-fab" type="button" aria-label="NavvoAI">
+  <svg viewBox="0 0 24 24" class="ico"><path d="M4 5h16v11H8l-4 4Z"/><path d="M9 10h.01M12 10h.01M15 10h.01"/></svg>
+  <span>NavvoAI</span>
+</button>
+<div class="ai-panel" id="ai-panel" role="dialog" aria-label="NavvoAI">
+  <div class="ai-head"><div><b>NavvoAI</b><small data-i18n="ai.sub">Genel teknik sorularınız için</small></div><button type="button" id="ai-close" aria-label="Kapat">×</button></div>
+  <div class="ai-body" id="ai-body"></div>
+  <form class="ai-form" id="ai-form"><input id="ai-input" autocomplete="off" data-i18n-ph="ai.ph" placeholder="Sorunuzu yazın..."><button type="submit" aria-label="Gönder"><svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="assets/js/data.js?v=11"></script>
+<script src="assets/js/site.js?v=11"></script>
 </body>
 </html>
