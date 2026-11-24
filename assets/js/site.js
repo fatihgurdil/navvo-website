@@ -24,7 +24,10 @@
       "sol.techText": "Sektörün lider üreticileriyle sertifikalı iş ortaklığımız sayesinde ihtiyacınıza en uygun teknolojiyi seçer, kurar ve yönetiriz.",
       "sol.othersTitle": "Diğer çözümlerimiz",
       "sol.explore": "Çözümü inceleyin",
+      "nav.portal": "Kurumsal Portal",
+      "nav.portalDesc": "Şirketin dijital ofisi",
       "nav.product": "Müşteri Paneli",
+      "nav.productDesc": "BT altyapısı ve destek",
       "nav.about": "Hakkımızda",
             "mega.cardTag": "Yeni · Yazılımlarımız",
       "nav.contact": "İletişim",
@@ -36,9 +39,9 @@
       "hero.cta1": "Hizmetlerimizi Keşfedin",
       "hero.cta2": "Ücretsiz Danışmanlık Alın",
 
-      "spot.1.tag": "Yeni · Navvo Müşteri Paneli",
-      "spot.1.title": "Tüm BT varlıklarınız tek ekranda",
-      "spot.1.desc": "Cihazlar, lisanslar, hizmetler ve destek talepleri; güvenli, 2FA korumalı tek bir panelde.",
+      "spot.1.tag": "Yeni · Yazılımlarımız",
+      "spot.1.title": "Şirketiniz tek portalda",
+      "spot.1.desc": "Duyuru, izin, kalite, sipariş takibi ve BT desteği; Kurumsal Portal ve Müşteri Paneli ile tek ekranda.",
       "spot.2.tag": "Siber Güvenlik",
       "spot.2.title": "Tehditleri işinizi etkilemeden durdurun",
       "spot.2.desc": "Tehdit tespiti, sızma testleri, veri ve e-posta güvenliği ile uçtan uca koruma.",
@@ -55,17 +58,9 @@
       "about.title": "Uçtan uca teknoloji ortağınız",
       "about.body": "Navvo Technology; kurumsal sunucu ve ağ altyapısından buluta, siber güvenlikten yedekleme ve iş sürekliliğine kadar uçtan uca teknoloji çözümleri sunan bir kurumsal teknoloji ortağıdır.",
 
-      "portal.eyebrow": "Yazılımlarımız · Navvo Müşteri Paneli",
-      "portal.title": "BT altyapınızın kontrolü artık sizde",
-      "portal.desc": "Cihazlarınızı, lisanslarınızı, hizmetlerinizi ve destek taleplerinizi tek bir güvenli panelden takip edin. Lisans bitişlerini kaçırmayın, çalışanlarınız şifresiz talep açsın, raporlarınız her ay hazır olsun.",
-      "portal.features": [
-        "Cihaz ve altyapı durumunu tek ekrandan izleyin",
-        "Lisans ve hizmet bitişlerinde otomatik uyarı",
-        "Çalışanlar için şifresiz destek talebi alanı",
-        "Aylık raporlar ve talep istatistikleri",
-        "Şifreli erişim kasası, zorunlu 2FA ve denetim izi"
-      ],
-      "portal.buy": "Teklif Alın",
+      "software.eyebrow": "Yazılımlarımız",
+      "software.title": "Süreçleriniz dağılmasın, tek ekranda aksın",
+      "software.subtitle": "Kendi geliştirdiğimiz iki yazılım: şirketinizin günlük işleyişi için Kurumsal Portal, BT altyapınız için Müşteri Paneli. Birlikte de ayrı ayrı da çalışır.",
 
 
 
@@ -156,7 +151,10 @@
       "sol.techText": "Thanks to certified partnerships with the industry's leading vendors, we choose, deploy, and manage the technology that fits you best.",
       "sol.othersTitle": "Our other solutions",
       "sol.explore": "Explore solution",
-      "nav.product": "Customer Portal",
+      "nav.portal": "Corporate Portal",
+      "nav.portalDesc": "Your company's digital office",
+      "nav.product": "Customer Panel",
+      "nav.productDesc": "IT infrastructure and support",
       "nav.about": "About",
             "mega.cardTag": "New · Our Software",
       "nav.contact": "Contact",
@@ -168,9 +166,9 @@
       "hero.cta1": "Explore Our Services",
       "hero.cta2": "Get Free Consulting",
 
-      "spot.1.tag": "New · Navvo Customer Portal",
-      "spot.1.title": "All your IT assets on one screen",
-      "spot.1.desc": "Devices, licenses, services, and support tickets in one secure, 2FA-protected portal.",
+      "spot.1.tag": "New · Our Software",
+      "spot.1.title": "Your company in one portal",
+      "spot.1.desc": "Announcements, leave, quality, order tracking, and IT support on one screen with Corporate Portal and Customer Panel.",
       "spot.2.tag": "Cybersecurity",
       "spot.2.title": "Stop threats before they hit your business",
       "spot.2.desc": "End-to-end protection with threat detection, penetration testing, and data and email security.",
@@ -187,17 +185,9 @@
       "about.title": "Your end-to-end technology partner",
       "about.body": "Navvo Technology is an enterprise technology partner delivering end-to-end solutions — from server and network infrastructure to cloud, cybersecurity, backup, and business continuity.",
 
-      "portal.eyebrow": "Our Software · Navvo Customer Portal",
-      "portal.title": "Take control of your IT infrastructure",
-      "portal.desc": "Track your devices, licenses, services, and support tickets from one secure portal. Never miss a license renewal, let employees open tickets without passwords, and get your reports ready every month.",
-      "portal.features": [
-        "Monitor device and infrastructure health on one screen",
-        "Automatic alerts before licenses and services expire",
-        "Password-free support request area for employees",
-        "Monthly reports and ticket statistics",
-        "Encrypted access vault, mandatory 2FA, and audit trail"
-      ],
-      "portal.buy": "Get a Quote",
+      "software.eyebrow": "Our Software",
+      "software.title": "Keep your processes together, on one screen",
+      "software.subtitle": "Two products we build ourselves: Corporate Portal for your company's daily work, Customer Panel for your IT infrastructure. They work together or on their own.",
 
 
 
@@ -275,7 +265,6 @@
     '<svg viewBox="0 0 24 24" class="ico"><path d="M2 12h4l3-7 4 14 3-7h6"/></svg>',
     '<svg viewBox="0 0 24 24" class="ico"><path d="M12 3.5 5 6v5.2c0 4.4 2.9 7.6 7 8.8 4.1-1.2 7-4.4 7-8.8V6Z"/><path d="M9.2 12.2l1.9 1.9 3.7-3.9"/></svg>'
   ];
-  const CHECK = '<svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.3 2.4 2.4 4.6-4.9"/></svg>';
 
   let lang = "tr";
   try { lang = localStorage.getItem("navvo-lang") || "tr"; } catch (e) { /* storage unavailable */ }
@@ -286,7 +275,6 @@
   const t = (k) => STR[lang][k];
   const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
   /* ---------- i18n ---------- */
 
@@ -300,7 +288,7 @@
     const lbl = $("#lang-label");
     if (lbl) lbl.textContent = lang === "tr" ? "EN" : "TR";
     renderDynamic();
-    startDemo();
+    document.dispatchEvent(new CustomEvent("navvo:lang", { detail: lang }));
   }
 
   /* ---------- Dynamic sections ---------- */
@@ -344,9 +332,6 @@
         </div>`).join("");
     }
 
-    const feats = $("#feat-list");
-    if (feats) feats.innerHTML = t("portal.features").map((f) => `<li>${CHECK}<span>${f}</span></li>`).join("");
-
     const cats = $("#footer-cats");
     if (cats) cats.innerHTML = NAVVO_DATA.map((g) => `<li><a href="${solUrl(g)}">${g.name[lang]}</a></li>`).join("");
 
@@ -374,7 +359,7 @@
         <div class="mega-aside">
           <a href="/#portal" class="mega-card">
             <span class="spot-tag">${t("mega.cardTag")}</span>
-            <b>${t("nav.product")}</b>
+            <b>${t("nav.portal")} · ${t("nav.product")}</b>
             <span>${t("spot.1.title")}</span>
             <span class="spot-go">${ARROW}</span>
           </a>
@@ -691,201 +676,6 @@
     }).observe(cv);
   }
 
-  /* ---------- Customer portal demo (scripted, looping) ---------- */
-
-  const DI = {
-    home: '<path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/>',
-    box: '<path d="M21 8 12 3 3 8v8l9 5 9-5Z"/><path d="m3 8 9 5 9-5M12 13v8"/>',
-    key: '<circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M17 6l3 3"/>',
-    head: '<path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/>',
-    mon: '<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/>',
-    life: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="m5.6 5.6 3.6 3.6M14.8 14.8l3.6 3.6M18.4 5.6l-3.6 3.6M9.2 14.8l-3.6 3.6"/>',
-    chart: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
-    lock: '<rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>',
-    shield: '<path d="M12 3.5 5 6v5.2c0 4.4 2.9 7.6 7 8.8 4.1-1.2 7-4.4 7-8.8V6Z"/>'
-  };
-  const svg = (k) => `<svg viewBox="0 0 24 24">${DI[k]}</svg>`;
-
-  function demoHTML() {
-    const tr = lang === "tr";
-    const L = (a, b) => (tr ? a : b);
-    const nav = [
-      ["home", L("Genel Bakış", "Overview"), "ov"], ["box", L("Ürünler", "Products")], ["key", L("Lisanslar", "Licenses"), "lic"],
-      ["head", L("Hizmetler", "Services")], ["mon", L("Envanter", "Inventory")], ["life", L("Destek Talepleri", "Support Tickets"), "tk"],
-      ["chart", L("Raporlar", "Reports"), "rp"], ["lock", L("Erişim Bilgileri", "Access Vault"), "vault"], ["shield", L("Hesap & Güvenlik", "Account & Security")]
-    ];
-    const months = tr ? ["May", "Haz", "Tem", "Ağu", "Eyl", "Eki"] : ["May", "Jun", "Jul", "Aug", "Sep", "Oct"];
-    const bars = [[60, 52], [72, 70], [48, 44], [84, 78], [66, 64], [90, 86]];
-    return `
-    <div class="d-app">
-      <aside class="d-side">
-        <img src="assets/img/logo.png" alt="">
-        ${nav.map(([ic, label, id]) => `<div class="d-nav"${id ? ` data-go="${id}"` : ""}>${svg(ic)}${label}</div>`).join("")}
-        <div class="d-user"><i>AY</i><div><b>Ayşe Yılmaz</b><br>${L("Yönetici", "Owner")}</div></div>
-      </aside>
-      <div class="d-main">
-        <section class="d-screen" data-s="ov">
-          <div class="d-head"><div><b>${L("Genel Bakış", "Overview")}</b><small>${L("Son güncelleme 09:41", "Last updated 09:41")}</small></div><span class="d-btn">+ ${L("Destek talebi aç", "Open ticket")}</span></div>
-          <div class="d-kpis">
-            <div class="d-card d-kpi"><span>${L("Ürünler", "Products")}</span><b>68/69</b><small class="w">${L("1 cihaz dikkat istiyor", "1 device needs attention")}</small></div>
-            <div class="d-card d-kpi"><span>${L("Lisanslar", "Licenses")}</span><b>24</b><small class="w">${L("2 tanesi 30 gün içinde bitiyor", "2 expire within 30 days")}</small></div>
-            <div class="d-card d-kpi"><span>${L("Hizmetler", "Services")}</span><b>4</b><small>${L("Bakım, Yedekleme", "Maintenance, Backup")}</small></div>
-            <div class="d-card d-kpi"><span>${L("Açık talep", "Open tickets")}</span><b>3</b><small class="g">${L("1 tanesi yanıtınızı bekliyor", "1 awaiting your reply")}</small></div>
-          </div>
-          <div class="d-row">
-            <div class="d-card"><h4>${L("Altyapı durumu", "Infrastructure health")}</h4>
-              <div class="d-dev">
-                <div><span class="dot"></span>Sophos XGS 2300<small>Firewall</small></div>
-                <div><span class="dot"></span>HPE ProLiant DL380<small>Server</small></div>
-                <div><span class="dot w"></span>Aruba AP-515 · ${L("Depo", "Warehouse")}<small>AP</small></div>
-                <div><span class="dot"></span>Cisco C9200-48P<small>Switch</small></div>
-                <div><span class="dot"></span>Proofpoint Essentials<small>E-mail</small></div>
-                <div><span class="dot"></span>Acronis Cyber Protect<small>Backup</small></div>
-              </div>
-            </div>
-            <div class="d-card"><h4>${L("Yaklaşan yenilemeler", "Upcoming renewals")}</h4>
-              <div class="d-ren">
-                <div><span>Sophos Xstream Protection</span><em class="w">${L("18 gün", "18 days")}</em></div>
-                <div><span>Microsoft 365 Business</span><em class="w">${L("27 gün", "27 days")}</em></div>
-                <div><span>Acronis Cyber Protect</span><em>${L("94 gün", "94 days")}</em></div>
-                <div><span>${L("Yerinde bakım", "On-site maintenance")}</span><em>${L("211 gün", "211 days")}</em></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="d-screen" data-s="lic">
-          <div class="d-head"><div><b>${L("Lisanslar", "Licenses")}</b><small>${L("24 aktif lisans", "24 active licenses")}</small></div></div>
-          <div class="d-card"><table class="d-table">
-            <tr><th>${L("Lisans", "License")}</th><th>${L("Üretici", "Vendor")}</th><th>${L("Adet", "Seats")}</th><th>${L("Kalan süre", "Remaining")}</th><th>${L("Durum", "Status")}</th></tr>
-            <tr><td>Xstream Protection</td><td>Sophos</td><td>1</td><td><div class="d-bar"><i class="w" style="--w:8%"></i></div></td><td><span class="d-badge b-w">${L("18 gün", "18 days")}</span></td></tr>
-            <tr><td>Microsoft 365 Business Std.</td><td>Microsoft</td><td>85</td><td><div class="d-bar"><i class="w" style="--w:12%"></i></div></td><td><span class="d-badge b-w">${L("27 gün", "27 days")}</span></td></tr>
-            <tr><td>Cyber Protect Advanced</td><td>Acronis</td><td>40</td><td><div class="d-bar"><i style="--w:38%"></i></div></td><td><span class="d-badge b-ok">${L("Aktif", "Active")}</span></td></tr>
-            <tr><td>Essentials Business</td><td>Proofpoint</td><td>85</td><td><div class="d-bar"><i style="--w:61%"></i></div></td><td><span class="d-badge b-ok">${L("Aktif", "Active")}</span></td></tr>
-            <tr><td>Intercept X Advanced</td><td>Sophos</td><td>120</td><td><div class="d-bar"><i style="--w:74%"></i></div></td><td><span class="d-badge b-ok">${L("Aktif", "Active")}</span></td></tr>
-            <tr><td>Bastion</td><td>Wallix</td><td>10</td><td><div class="d-bar"><i style="--w:88%"></i></div></td><td><span class="d-badge b-ok">${L("Aktif", "Active")}</span></td></tr>
-          </table></div>
-        </section>
-        <section class="d-screen" data-s="tk">
-          <div class="d-head"><div><b>${L("Yeni destek talebi", "New support ticket")}</b><small>${L("Ekibimiz genellikle 15 dk içinde yanıtlar", "Our team usually replies within 15 min")}</small></div></div>
-          <div class="d-row">
-            <div class="d-card d-form">
-              <div class="d-field" data-f="subj"><label>${L("Konu", "Subject")}</label><span></span></div>
-              <div class="d-field"><label>${L("Kategori", "Category")}</label>${L("Ağ / İnternet", "Network / Internet")}</div>
-              <div class="d-field big" data-f="body"><label>${L("Açıklama", "Description")}</label><span></span></div>
-              <span class="d-btn" data-send style="justify-self:start">${L("Talebi gönder", "Submit ticket")}</span>
-            </div>
-            <div class="d-card"><h4>${L("Son talepler", "Recent tickets")}</h4>
-              <div class="d-ren">
-                <div><span>${L("VPN bağlantı sorunu", "VPN connection issue")}</span><em class="w">${L("Yanıt bekleniyor", "Awaiting reply")}</em></div>
-                <div><span>${L("Yeni kullanıcı hesabı", "New user account")}</span><em>${L("Çözüldü", "Resolved")}</em></div>
-                <div><span>${L("Yazıcı kuyruğu", "Printer queue")}</span><em>${L("Çözüldü", "Resolved")}</em></div>
-              </div>
-            </div>
-          </div>
-          <div class="d-toast"><i>✓</i>${L("Talebiniz alındı · #NV-2481", "Ticket received · #NV-2481")}</div>
-        </section>
-        <section class="d-screen" data-s="rp">
-          <div class="d-head"><div><b>${L("Raporlar", "Reports")}</b><small>${L("Son 6 ay", "Last 6 months")}</small></div><span class="d-btn">PDF</span></div>
-          <div class="d-card">
-            <h4>${L("Destek talepleri", "Support tickets")}</h4>
-            <div class="d-chart">${bars.map(([a, b]) => `<div><span style="--h:${a}%"></span><span style="--h:${b}%"></span></div>`).join("")}</div>
-            <div class="d-axis">${months.map((m) => `<span>${m}</span>`).join("")}</div>
-            <div class="d-legend"><span><i style="background:#2a78d6"></i>${L("Açılan", "Opened")}</span><span><i style="background:#1baf7a"></i>${L("Çözülen", "Resolved")}</span></div>
-          </div>
-        </section>
-        <section class="d-screen" data-s="vault">
-          <div class="d-head"><div><b>${L("Erişim Bilgileri", "Access Vault")}</b><small>${L("AES-256 ile şifreli · her görüntüleme kayıt altında", "AES-256 encrypted · every view is logged")}</small></div></div>
-          <div class="d-vault">
-            <div class="d-card"><b>Sophos XGS 2300</b><code>https://10.0.0.1:4444</code><code>admin · ••••••••••</code><span class="d-lock">${svg("lock")}${L("2FA ile göster", "Reveal with 2FA")}</span></div>
-            <div class="d-card"><b>HPE iLO</b><code>https://10.0.0.20</code><code>Administrator · ••••••••</code><span class="d-lock">${svg("lock")}${L("2FA ile göster", "Reveal with 2FA")}</span></div>
-            <div class="d-card"><b>Cisco C9200</b><code>ssh 10.0.0.2:22</code><code>netadmin · •••••••••</code><span class="d-lock">${svg("lock")}${L("2FA ile göster", "Reveal with 2FA")}</span></div>
-          </div>
-        </section>
-        <svg class="d-cursor" viewBox="0 0 24 24"><path d="M4 2l16 9-7 2-3 7Z" fill="#fff" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round"/></svg>
-      </div>
-    </div>`;
-  }
-
-  let demoRun = 0;
-  function startDemo() {
-    const demo = $("#demo");
-    if (!demo) return;
-    const run = ++demoRun;
-    demo.innerHTML = demoHTML();
-    fitDemo();
-    const cursor = $(".d-cursor", demo);
-    const main = $(".d-main", demo);
-    const alive = () => run === demoRun;
-    const scale = () => demo.getBoundingClientRect().width / 1100;
-
-    function moveTo(el) {
-      const a = main.getBoundingClientRect(), b = el.getBoundingClientRect(), s = scale();
-      const x = (b.left - a.left + b.width * 0.35) / s, y = (b.top - a.top + b.height * 0.55) / s;
-      cursor.style.transform = `translate(${x}px, ${y}px)`;
-    }
-    async function click(el) {
-      moveTo(el);
-      await sleep(950);
-      cursor.classList.remove("click"); void cursor.offsetWidth; cursor.classList.add("click");
-      el.classList.add("press");
-      await sleep(180);
-      el.classList.remove("press");
-    }
-    function show(id) {
-      $$(".d-screen", demo).forEach((s) => s.classList.toggle("on", s.dataset.s === id));
-      $$(".d-nav", demo).forEach((n) => n.classList.toggle("on", n.dataset.go === id));
-    }
-    async function type(field, text) {
-      const span = $("span", field);
-      field.classList.add("focus");
-      span.classList.add("caret");
-      for (const ch of text) {
-        if (!alive()) return;
-        span.textContent += ch;
-        await sleep(38);
-      }
-      span.classList.remove("caret");
-      field.classList.remove("focus");
-    }
-
-    show("ov");
-    cursor.style.transform = "translate(640px, 420px)";
-    if (reduced) return;
-
-    (async function loop() {
-      const tr = lang === "tr";
-      await sleep(2600);
-      while (alive()) {
-        for (const id of ["lic", "tk", "rp", "vault", "ov"]) {
-          if (!alive()) return;
-          await click($(`.d-nav[data-go="${id}"]`, demo));
-          if (!alive()) return;
-          show(id);
-          if (id === "tk") {
-            $$(".d-field span", demo).forEach((s) => { s.textContent = ""; });
-            $(".d-toast", demo).classList.remove("on");
-            await sleep(500);
-            await click($('[data-f="subj"]', demo));
-            await type($('[data-f="subj"]', demo), tr ? "Depo kablosuz ağı kopuyor" : "Warehouse Wi-Fi keeps dropping");
-            await click($('[data-f="body"]', demo));
-            await type($('[data-f="body"]', demo), tr ? "Depodaki AP-515 sabahtan beri aralıklı bağlantı veriyor." : "The AP-515 in the warehouse has been flapping since this morning.");
-            await click($("[data-send]", demo));
-            $(".d-toast", demo).classList.add("on");
-            await sleep(2400);
-          } else {
-            await sleep(3200);
-          }
-        }
-      }
-    })();
-  }
-
-  function fitDemo() {
-    const fit = $("#demo-fit"), demo = $("#demo");
-    if (!fit || !demo) return;
-    demo.style.transform = `scale(${fit.clientWidth / 1100})`;
-  }
-
   /* ---------- Network tools ---------- */
 
   function bindTools() {
@@ -1014,5 +804,4 @@
   smoke($("#cta-canvas"), { base: "#160803", glow: 0.75, speed: 0.8 });
   bindTools();
   bindAi();
-  window.addEventListener("resize", fitDemo);
 })();

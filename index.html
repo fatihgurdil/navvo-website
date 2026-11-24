@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=12">
+<link rel="stylesheet" href="assets/css/site.css?v=13">
 </head>
 <body data-page="home">
 
@@ -64,9 +64,9 @@
   <section class="spotlight">
     <div class="container spot-grid">
       <a href="#portal" class="spot reveal">
-        <span class="spot-tag" data-i18n="spot.1.tag">Yeni · Navvo Müşteri Paneli</span>
-        <h3 data-i18n="spot.1.title">Tüm BT varlıklarınız tek ekranda</h3>
-        <p data-i18n="spot.1.desc">Cihazlar, lisanslar, hizmetler ve destek talepleri; güvenli, 2FA korumalı tek bir panelde.</p>
+        <span class="spot-tag" data-i18n="spot.1.tag">Yeni · Yazılımlarımız</span>
+        <h3 data-i18n="spot.1.title">Şirketiniz tek portalda</h3>
+        <p data-i18n="spot.1.desc">Duyuru, izin, kalite, sipariş takibi ve BT desteği; Kurumsal Portal ve Müşteri Paneli ile tek ekranda.</p>
         <span class="spot-go"><svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
       <a href="#services" class="spot reveal" style="--d:1">
@@ -100,21 +100,34 @@
   </section>
 
   <section class="dark-band portal" id="portal">
-    <div class="container portal-grid">
-      <div class="laptop reveal" aria-label="Navvo Müşteri Paneli demo">
-        <div class="laptop-screen"><div class="demo-fit" id="demo-fit"><div class="demo" id="demo"></div></div></div>
-        <div class="laptop-base"></div>
+    <div class="streak" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-head center reveal">
+        <div class="eyebrow eyebrow-glow" data-i18n="software.eyebrow">Yazılımlarımız</div>
+        <h2 data-i18n="software.title">Süreçleriniz dağılmasın, tek ekranda aksın</h2>
+        <p data-i18n="software.subtitle">Kendi geliştirdiğimiz iki yazılım: şirketinizin günlük işleyişi için Kurumsal Portal, BT altyapınız için Müşteri Paneli. Birlikte de ayrı ayrı da çalışır.</p>
       </div>
-      <div class="portal-copy">
-        <div class="eyebrow eyebrow-glow reveal" data-i18n="portal.eyebrow">Yazılımlarımız · Navvo Müşteri Paneli</div>
-        <h2 class="reveal" data-i18n="portal.title">BT altyapınızın kontrolü artık sizde</h2>
-        <p class="lead-sm reveal" style="--d:1" data-i18n="portal.desc">Cihazlarınızı, lisanslarınızı, hizmetlerinizi ve destek taleplerinizi tek bir güvenli panelden takip edin. Lisans bitişlerini kaçırmayın, çalışanlarınız şifresiz talep açsın, raporlarınız her ay hazır olsun.</p>
-        <ul class="feat-list reveal" style="--d:2" id="feat-list"></ul>
-        <div class="portal-actions reveal" style="--d:3">
-          <a href="#contact" class="btn btn-primary" data-i18n="portal.buy">Teklif Alın</a>
-          <a href="https://customer.navvo.co" class="link-arrow light"><span data-i18n="top.login">Müşteri Girişi</span> <svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="sw-tabs reveal" id="sw-tabs" role="tablist">
+        <button type="button" role="tab" id="kurumsal-portal" data-p="portal" aria-controls="sw-stage" aria-selected="true"><b data-i18n="nav.portal">Kurumsal Portal</b><small data-i18n="nav.portalDesc">Şirketin dijital ofisi</small></button>
+        <button type="button" role="tab" id="musteri-paneli" data-p="panel" aria-controls="sw-stage" aria-selected="false"><b data-i18n="nav.product">Müşteri Paneli</b><small data-i18n="nav.productDesc">BT altyapısı ve destek</small></button>
+      </div>
+      <div class="portal-grid" id="sw-stage" role="tabpanel">
+        <div class="sw-demo">
+          <div class="laptop">
+            <div class="laptop-screen"><div class="demo-fit" id="demo-fit" aria-hidden="true"><div class="demo" id="demo"></div></div></div>
+            <div class="laptop-base"></div>
+          </div>
+          <div class="demo-bar">
+            <button type="button" id="demo-play" aria-label="Duraklat"></button>
+            <div class="demo-chapters" id="demo-chapters"></div>
+          </div>
+          <p class="demo-cap" id="demo-cap"></p>
+          <p class="demo-note" id="demo-note"></p>
         </div>
+        <div class="portal-copy" id="sw-copy"></div>
       </div>
+      <div class="sw-mods" id="sw-mods"></div>
+      <div class="sw-base" id="sw-base"></div>
     </div>
   </section>
 
@@ -237,7 +250,8 @@
     <div>
       <h4 data-i18n="footer.productTitle">Yazılımlar</h4>
       <ul class="footer-links">
-        <li><a href="index.html#portal" data-i18n="nav.product">Müşteri Paneli</a></li>
+        <li><a href="index.html#kurumsal-portal" data-i18n="nav.portal">Kurumsal Portal</a></li>
+        <li><a href="index.html#musteri-paneli" data-i18n="nav.product">Müşteri Paneli</a></li>
         <li><a href="https://customer.navvo.co" data-i18n="top.login">Müşteri Girişi</a></li>
       </ul>
     </div>
@@ -267,7 +281,8 @@
 
 <div class="toast" id="toast"></div>
 
-<script src="assets/js/data.js?v=12"></script>
-<script src="assets/js/site.js?v=12"></script>
+<script src="assets/js/data.js?v=13"></script>
+<script src="assets/js/site.js?v=13"></script>
+<script src="assets/js/software.js?v=13"></script>
 </body>
 </html>
